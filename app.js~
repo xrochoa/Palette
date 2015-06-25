@@ -54,6 +54,7 @@ app.controller("myController", function($scope) {
     ];
 
     $scope.otherColors = [
+        "#23CCAC",
         "#16A585",
         "#57Da8D",
         "#27AE65"
