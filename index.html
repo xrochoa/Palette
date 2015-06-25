@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <style>
+        .color {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            height: 75px;
+            color: white;
+        }
+    </style>
+
+
+</head>
+
+<body class="text-center" ng-app="myApp">
+    <section ng-controller="myController">
+        <div class="jumbotron">
+            <h1>Fridge Binge Palette</h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 color" ng-repeat="colori in lightColors" ng-style={"background-color":"{{colori}}","width":"{{100/12}}%"}>{{icolori}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 color" ng-repeat="colora in primaryColors" ng-style={"background-color":"{{colora}}","width":"{{100/12}}%"}>{{acolora}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 color" ng-repeat="colore in darkColors" ng-style={"background-color":"{{colore}}","width":"{{100/12}}%"}>{{ecolore}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 color" ng-repeat="coloru in darkerColors" ng-style={"background-color":"{{coloru}}","width":"{{100/12}}%"}>{{ucoloru}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 color" ng-repeat="coloro in grayScale" ng-style={"background-color":"{{coloro}}","width":"{{100/4}}%"}>{{ocoloro}}</div>
+        </div>
+
+
+
+    </section>
+
+</body>
+
+
+</html>
