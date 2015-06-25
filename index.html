@@ -11,8 +11,17 @@
             border: 0;
             padding: 0;
             height: 75px;
-            color: white;
         }
+	.black:hover {
+	    color: #323333 !important;
+	}
+	.white:hover {
+	    color: #f5f9fa !important;
+	}
+	.gray:hover {
+	    color: #808080 !important;
+	}
+
     </style>
 
 
@@ -24,26 +33,20 @@
             <h1>Fridge Binge Palette</h1>
         </div>
         <div class="row">
-            <div class="col-xs-1 color" ng-repeat="colori in lightColors" ng-style={"background-color":"{{colori}}","width":"{{100/12}}%"}>{{icolori}}</div>
+            <div class="col-xs-1 color" ng-repeat="color in lightColors" ng-style={"background-color":"{{color}}","width":"{{100/12}}%","color":"{{color}}"}><h1 class="black">{{color}}</h1></div>
         </div>
         <div class="row">
-            <div class="col-xs-1 color" ng-repeat="colora in primaryColors" ng-style={"background-color":"{{colora}}","width":"{{100/12}}%"}>{{acolora}}</div>
+            <div class="col-xs-1 color" ng-repeat="color in primaryColors" ng-style={"background-color":"{{color}}","width":"{{100/12}}%","color":"{{color}}"}><h1 class="black">{{color}}</h1></div>
         </div>
         <div class="row">
-            <div class="col-xs-1 color" ng-repeat="colore in darkColors" ng-style={"background-color":"{{colore}}","width":"{{100/12}}%"}>{{ecolore}}</div>
+            <div class="col-xs-1 color" ng-repeat="color in darkColors" ng-style={"background-color":"{{color}}","width":"{{100/12}}%","color":"{{color}}"}><h1 class="white">{{color}}</h1></div>
         </div>
         <div class="row">
-            <div class="col-xs-1 color" ng-repeat="coloru in darkerColors" ng-style={"background-color":"{{coloru}}","width":"{{100/12}}%"}>{{ucoloru}}</div>
+            <div class="col-xs-1 color" ng-repeat="color in otherColors track by $index" ng-style={"background-color":"{{color}}","width":"{{100/12}}%","color":"{{color}}"}><h1 class="white">{{color}}</h1></div>
         </div>
         <div class="row">
-            <div class="col-xs-4 color" ng-repeat="coloru in otherColors" ng-style={"background-color":"{{coloru}}","width":"{{100/3}}%"}>{{ucoloru}}</div>
+            <div class="col-xs-3 color" ng-repeat="color in grayScale" ng-style={"background-color":"{{color}}","width":"{{100/4}}%","color":"{{color}}"}><h1 class="gray">{{color}}</h1></div>
         </div>
-        <div class="row">
-            <div class="col-xs-3 color" ng-repeat="coloro in grayScale" ng-style={"background-color":"{{coloro}}","width":"{{100/4}}%"}>{{ocoloro}}</div>
-        </div>
-
-
-
     </section>
 
 </body>

@@ -54,9 +54,19 @@ app.controller("myController", function($scope) {
     ];
 
     $scope.otherColors = [
+        "#992626",
+        "#A65329",
+        "#B3862C",
+        "#6FB32C",
+        "#38B32B",
         "#16A585",
-        "#57Da8D",
-        "#27AE65"
+        "#2C9CB3",
+        "#2C7BB3",
+        "#2C43B3",
+        "#592CB3",
+        "#9C2CB3",
+        "#B32C4E"
+
     ];
 
 });
